@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    margin-block: 0;
+    padding-inline: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 42px;
+    font-weight: bold;
+    color: #e75a7c;
+}
+h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #e75a7c;
+}
+h3 {
+    font-size: 32px;
+    font-weight: bold;
+}
+h4 {
+    font-size: 26px;
+    font-weight: bold;
+}
+h5 {
+    font-size: 23px;
+    font-weight: bold;
+}
+h6 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+header {
+    position: fixed;
+    width: 100vw;
+    background-color: #bbc7a4;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 60% 40%;
+    place-items: center;
+    height: 80px;
+}
+
+nav {
+    display: none;
+}
+
+ul {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: max-content max-content max-content;
+    column-gap: 30px;
+}
+
+#banner {
+    height: 350px;
+    background-color: grey;
+}
+
+#products {
+    margin: 3vw 10vw 12vw 10vw;
+    text-align: center;
+}
+
+.product {
+    background-color: grey;
+    height: 20vw;
+    width: 20vw;
+}
+
+#products div {
+    margin-top: 50px;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+    align-items: center;
+}
+
+#program {
+    height: 400px;
+    background-color: grey;
+    text-align: center;
+    padding-top: 200px;
+}
+
+.vit-text {
+    color: white;
+    line-height: 2;
+    text-shadow: black 30px;
+}
+
+button {
+    border: solid 3px white;
+    background-color: transparent;
+    margin-top: 20px;
+    padding: 6px 70px;
+    box-shadow: 3;
+}
+
+#gif {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 30vw;
+    width: 40vw;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    background-color: grey;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 1000px) {
+    ul {
+        display: none;
+        grid-row: 2;
+    }
+    nav {
+        display: contents;
+        grid-row: 1;
+        grid-column: 2;
+    }
+    .product {
+        background-color: grey;
+        height: 25vw;
+        width: 25vw;
+    }
+    #products {
+        margin: 12vw 5vw 12vw 5vw;
+        text-align: center;
+    }
+    #products div {
+        margin-top: 12vw;
+    }
+    #gif {
+        height: 40vw;
+        width: 60vw;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+}
+
+footer {
+    background-color: #bbc7a4;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    line-height: 2;
+}
