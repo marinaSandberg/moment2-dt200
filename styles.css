@@ -8,18 +8,18 @@
 }
 
 body {
-    background-color: #f2f5ea;
+    background-color: #F7F7EE;
 }
 
 h1 {
     font-size: 42px;
     font-weight: bold;
-    color: #e75a7c;
+    color:  #1E421D;
 }
 h2 {
     font-size: 36px;
     font-weight: bold;
-    color: #e75a7c;
+    color: #1E421D;
 }
 h3 {
     font-size: 32px;
@@ -41,17 +41,21 @@ h6 {
 header {
     position: fixed;
     width: 100vw;
-    background-color: #bbc7a4;
+    background-color:   #1E421D;
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: 60% 40%;
-    place-items: center;
+    justify-items:left;
+    align-items: center;
     height: 80px;
+}
+#logo{
+    margin-left: 40px;
 }
 /*-MENU-*/
 nav {
     display: none;
-    background-color: #bbc7a4;
+    background-color: #1E421D;
     box-shadow: 0 0px 10px rgba(0, 0, 0, 0.71);
     font-size: 1.4em;
     position: absolute;
@@ -79,7 +83,7 @@ nav li {
 }
 
 nav a {
-    color: black;
+    color: #E1E587;
     text-decoration: none;
     padding: 0 1em;
 }
@@ -94,16 +98,16 @@ nav li:hover {
     display: flex;
     align-items: center;
     padding: 8px 15px;
-    border: black solid 1.5px;
+    border: #E1E587 solid 1.5px;
     cursor: pointer;
 }
 
 .open {
-    margin: 0 1em;
+    margin: 0 0 0 24vw;
 }
 
 .menu-btn:hover {
-    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.421);
+    box-shadow: 0 0px 5px  #E1E587;;
 }
 
 .menu-icon {
@@ -115,13 +119,13 @@ nav li:hover {
     display: block;
     width: 20px;
     height: 3px;
-    background-color: black;
+    background-color: #E1E587;
     margin: 5px 0;
 }
 
 .menu-text {
     font-size: 1.2em;
-    color: black;
+    color: #E1E587;
 }
 
 /* Meny knapp, stäng */
@@ -146,6 +150,7 @@ nav li:hover {
 }
 
 #regular {
+    margin-left: 210px;
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: max-content max-content max-content;
@@ -154,12 +159,20 @@ nav li:hover {
 
 #regular a {
     text-decoration: none;
-    color: black;
+    color:#E1E587;
 }
 
-#banner {
-    height: 350px;
-    background-color: grey;
+#banner picture{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+#banner picture img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 #products {
@@ -219,7 +232,7 @@ button {
 }
 
 footer {
-    background-color: #bbc7a4;
+    background-color: #E1E587;
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -228,7 +241,7 @@ footer {
 
 /*-RESPONSIVENESS-*/
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1521px) {
     #regular {
         display: none;
     }
@@ -254,7 +267,10 @@ footer {
     }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 801px) {
+    .open {
+        margin: 0 0 0 10vw;
+    }
     .product {
         height: 60vw;
         width: 60vw;

@@ -11,11 +11,12 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 
 </head>
 <body>
     <header>
-        <picture><a href="index.html">Logo</a></picture>
+        <picture><a href="index.html"><img id="logo" src="images/logo.svg" alt="logo image"></a></picture>
         <!--Regular menu-->
         <ul id="regular">
             <h6><a href="">STARTSIDA</a></h6>
@@ -50,7 +51,11 @@
         </nav>
     </header>
     <section id="banner">
-        <picture></picture>
+        <picture>
+            <source media="(min-width: 1521px)" srcset="/images/stor_bild.jpg">
+            <source media="(min-width: 801px)" srcset="/images/mellan_bild.jpg">
+            <img src="/images/liten_bild.jpg">
+        </picture>
     </section>
     <section id="products">
         <h1>Senaste produkterna</h1>
