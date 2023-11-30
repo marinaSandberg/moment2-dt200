@@ -7,6 +7,10 @@
     font-size: 18px;
 }
 
+body {
+    background-color: #f2f5ea;
+}
+
 h1 {
     font-size: 42px;
     font-weight: bold;
