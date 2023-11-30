@@ -175,15 +175,9 @@ nav li:hover {
     height: auto;
 }
 
-#products {
+#products, #about {
     margin: 3vw 10vw 12vw 10vw;
     text-align: center;
-}
-
-.product {
-    background-color: grey;
-    height: 20vw;
-    width: 20vw;
 }
 
 #products div {
@@ -191,6 +185,37 @@ nav li:hover {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: auto auto auto;
+    justify-items: center;
+    align-items: center;
+}
+
+#products div img {
+    grid-row: 1 / 4;
+    grid-column: 1;
+}
+
+#name {
+    grid-row: 1;
+    grid-column: 2;
+}
+#about-text {
+    grid-row: 2;
+    grid-column: 2;
+}
+#uppgift {
+    grid-row: 3;
+    grid-column: 2;
+}
+#text-uppgift {
+    grid-row: 4;
+    grid-column: 2;
+}
+
+#about div {
+    margin-top: 50px;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
     justify-items: center;
     align-items: center;
 }
@@ -248,10 +273,6 @@ footer {
     #open-menu {
         display:flex;
     }
-    .product {
-        height: 25vw;
-        width: 25vw;
-    }
     #products {
         margin: 12vw 5vw 12vw 5vw;
         text-align: center;
@@ -271,17 +292,6 @@ footer {
     .open {
         margin: 0 0 0 10vw;
     }
-    .product {
-        height: 60vw;
-        width: 60vw;
-    }
-    #products div {
-        display: grid;
-        grid-template-rows: auto auto auto;
-        grid-template-columns: auto;
-        row-gap: 20px;
-        place-items: center;
-    }
     .nowrap {
         display: none;
     }
@@ -293,5 +303,15 @@ footer {
         width: 60vw;
         margin-top: 100px;
         margin-bottom: 100px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #products div {
+        display: grid;
+        grid-template-rows: auto auto auto;
+        grid-template-columns: auto;
+        row-gap: 20px;
+        place-items: center;
     }
 }
