@@ -44,16 +44,113 @@ header {
     place-items: center;
     height: 80px;
 }
-
+/*-MENU-*/
 nav {
+    display: none;
+    background-color: #bbc7a4;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.71);
+    font-size: 1.4em;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 250px;
+}
+
+#open-menu {
     display: none;
 }
 
-ul {
+nav ul {
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+}
+
+nav li {
+    padding: 0.8em 0;
+    width: 100%;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    padding: 0 1em;
+}
+
+nav li:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Meny knapp, öppna meny */
+.menu-btn {
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
+    border: black solid 1.5px;
+    cursor: pointer;
+}
+
+.open {
+    margin: 0 1em;
+}
+
+.menu-btn:hover {
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.421);
+}
+
+.menu-icon {
+    margin-right: 10px;
+}
+
+/* de tre svarta strecken (hamburg-icon) */
+.bars {
+    display: block;
+    width: 20px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+}
+
+.menu-text {
+    font-size: 1.2em;
+    color: black;
+}
+
+/* Meny knapp, stäng */
+.close {
+    margin: 1em 1.5em;
+    padding: 10px 15px;
+}
+
+/* Roterar två lodräda streck, till ett kryss */
+.cross1 {
+    width: 25px;
+    transform: rotate(45deg);
+    position: relative;
+    top: 5px;
+}
+
+.cross2 {
+    width: 25px;
+    transform: rotate(135deg);
+    position: relative;
+    top: -3px;
+}
+
+#regular {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: max-content max-content max-content;
     column-gap: 30px;
+}
+
+#regular a {
+    text-decoration: none;
+    color: black;
 }
 
 #banner {
@@ -91,7 +188,10 @@ ul {
 .vit-text {
     color: white;
     line-height: 2;
-    text-shadow: black 30px;
+}
+
+.wrap {
+    display: none;
 }
 
 button {
@@ -114,18 +214,24 @@ button {
     justify-content: center;
 }
 
+footer {
+    background-color: #bbc7a4;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    line-height: 2;
+}
+
+/*-RESPONSIVENESS-*/
+
 @media only screen and (max-width: 1000px) {
-    ul {
+    #regular {
         display: none;
-        grid-row: 2;
     }
-    nav {
-        display: contents;
-        grid-row: 1;
-        grid-column: 2;
+    #open-menu {
+        display:flex;
     }
     .product {
-        background-color: grey;
         height: 25vw;
         width: 25vw;
     }
@@ -142,13 +248,30 @@ button {
         margin-top: 100px;
         margin-bottom: 100px;
     }
-
 }
 
-footer {
-    background-color: #bbc7a4;
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    line-height: 2;
+@media only screen and (max-width: 550px) {
+    .product {
+        height: 60vw;
+        width: 60vw;
+    }
+    #products div {
+        display: grid;
+        grid-template-rows: auto auto auto;
+        grid-template-columns: auto;
+        row-gap: 20px;
+        place-items: center;
+    }
+    .nowrap {
+        display: none;
+    }
+    .wrap{
+        display: contents;
+    }
+    #gif {
+        height: 40vw;
+        width: 60vw;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
 }

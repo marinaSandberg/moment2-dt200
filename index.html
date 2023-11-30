@@ -15,23 +15,38 @@
 </head>
 <body>
     <header>
-        <picture>
-            logo
-        </picture>
-        <ul>
-            <h6>STARTSIDA</h6>
-            <h6>OM MIG</h6>
-            <h6>BILDBEHANDLING</h6>
+        <picture><a href="index.html">Logo</a></picture>
+        <!--Regular menu-->
+        <ul id="regular">
+            <h6><a href="">STARTSIDA</a></h6>
+            <h6><a href="">OM MIG</a></h6>
+            <h6><a href="">BILDBEHANDLING</a></h6>
         </ul>
-        <nav>
-            <section id="lines">
-                <div></div>
-                <div></div>
-                <div></div>
-            </section>
-            <section id="name">
-                Meny
-            </section>
+        <!--Burger menu-->
+        <button class="menu-btn open" id="open-menu">
+            <span class="menu-icon">
+                <span class="bars"></span>
+                <span class="bars"></span>
+                <span class="bars"></span>
+            </span>
+            <span class="menu-text">Meny</span>
+        </button>
+        <!-- navigering -->
+        <nav id="nav-menu">
+            <!-- Knapp som visas om mobilmenyn är utfälld -->
+            <button class="menu-btn close" id="close-menu">
+                <span class="menu-icon">
+                    <span class="bars cross1"></span>
+                    <span class="bars cross2"></span>
+                </span>
+                <span class="menu-text">Stäng</span>
+            </button>
+            <ul>
+                <li><a href="#">Startsida</a></li>
+                <li><a href="#">Om oss</a></li>
+                <li><a href="#">Nyheter</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
         </nav>
     </header>
     <section id="banner">
@@ -46,7 +61,8 @@
         </div>
     </section>
     <section id="program">
-        <h1 class="vit-text">Webbutvecklingsprogrammet <br> Mittuniversitetet</h1>
+        <h1 class="nowrap vit-text">Webbutvecklingsprogrammet <br> Mittuniversitetet</h1>
+        <h1 class="wrap vit-text">Webbutvecklings-<br>programmet <br> Mittuniversitetet</h1>
         <button><h1 class="vit-text">Sök här</h1></button>
     </section>
     <section id="gif">
@@ -55,5 +71,6 @@
     <footer>
         Laborationsuppgift för Kursen DT200G, Grafisk design för webb. <br> Copyright Marina Sandberg Papadaki, 2023
     </footer>
+    <script src="main.js"></script>
 </body>
 </html>
