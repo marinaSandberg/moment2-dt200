@@ -347,6 +347,18 @@ footer {
         grid-template-rows: auto auto;
         grid-template-columns: auto;
     }
+
+    #profile img{
+        width: 70vw;
+        border-radius: 500px;
+    }
+    #about>div {
+        padding: 10px;
+    }
+    .about-text {
+        margin: 10px;
+        line-height: 30px;
+    }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -356,5 +368,9 @@ footer {
         grid-template-columns: auto;
         row-gap: 20px;
         place-items: center;
+    }
+    #about>div {
+        row-gap: 30px;
+        grid-template-columns: auto;
     }
 }
