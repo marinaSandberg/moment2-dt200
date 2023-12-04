@@ -194,25 +194,22 @@ nav li:hover {
     grid-column: 1;
 }
 
-#name {
-    grid-row: 1;
-    grid-column: 2;
-}
-#about-text {
-    grid-row: 2;
-    grid-column: 2;
-}
-#uppgift {
-    grid-row: 3;
-    grid-column: 2;
-}
-#text-uppgift {
-    grid-row: 4;
-    grid-column: 2;
+#bildbehandling {
+    margin: 3vw 10vw 6vw 10vw;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    place-items: center;
+    text-align: center;
 }
 
-#about div {
-    margin-top: 50px;
+.behandlade img {
+    width: 35vw;
+    height: auto;
+    margin: 30px;
+}
+
+#bildbehandling div {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: auto auto;
@@ -220,11 +217,41 @@ nav li:hover {
     align-items: center;
 }
 
+#name {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+#about>div {
+    margin-top: 50px;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
+    place-items: auto;
+    padding: 30px;
+    column-gap: 60px;
+}
+
+.about-text {
+    margin: 20px;
+    line-height: 30px;
+    text-align: justify;
+}
+#profile img{
+    border-radius: 500px;
+}
 #program {
-    height: 400px;
-    background-color: grey;
+    height: 25vw;
+    width: 40vw;
+    align-items: center;
     text-align: center;
     padding-top: 200px;
+    background-image: url("/images/fargsticka.jpg");
+    position: relative;
+    left: 30vw;
+    z-index: -1;
+    opacity: 0.5;
+    background-size: cover;
 }
 
 .vit-text {
@@ -245,9 +272,8 @@ button {
 }
 
 #gif {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    position: relative;
+    left: 30vw;
     height: 30vw;
     width: 40vw;
     margin-top: 150px;
@@ -280,17 +306,19 @@ footer {
     #products div {
         margin-top: 12vw;
     }
-    #gif {
-        height: 40vw;
-        width: 60vw;
+    #gif, #program{
+        padding-top: 100px;
+        height: 70vw;
+        width: 80vw;
+        left: 10vw;
         margin-top: 100px;
         margin-bottom: 100px;
     }
 }
 
-@media only screen and (max-width: 801px) {
+@media only screen and (max-width: 751px) {
     .open {
-        margin: 0 0 0 10vw;
+        margin: 0 0 0 8vw;
     }
     .nowrap {
         display: none;
@@ -298,11 +326,26 @@ footer {
     .wrap{
         display: contents;
     }
-    #gif {
-        height: 40vw;
-        width: 60vw;
+    h1 {
+        font-size: 30px;
+    }
+    #gif, #program{
+        padding-top: 10px;
+        height: 75vw;
+        width: 70vw;
+        left: 15vw;
         margin-top: 100px;
         margin-bottom: 100px;
+    }
+
+    .behandlade img {
+        width: 60vw;
+    }
+    
+    #bildbehandling div {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto;
     }
 }
 
