@@ -242,16 +242,16 @@ nav li:hover {
 }
 #program {
     height: 25vw;
-    width: 40vw;
+    width: 100vw;
     align-items: center;
     text-align: center;
     padding-top: 200px;
     background-image: url("/images/fargsticka.jpg");
     position: relative;
-    left: 30vw;
     z-index: -1;
     opacity: 0.5;
     background-size: cover;
+    background-position: center;
 }
 
 .vit-text {
@@ -306,7 +306,13 @@ footer {
     #products div {
         margin-top: 12vw;
     }
-    #gif, #program{
+    #program{
+        padding-top: 100px;
+        height: 50vw;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    #gif {
         padding-top: 100px;
         height: 70vw;
         width: 80vw;
@@ -329,7 +335,13 @@ footer {
     h1 {
         font-size: 30px;
     }
-    #gif, #program{
+    #program{
+        padding-top: 40px;
+        height: 75vw;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    #gif{
         padding-top: 10px;
         height: 75vw;
         width: 70vw;
