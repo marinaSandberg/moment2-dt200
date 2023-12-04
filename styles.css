@@ -271,15 +271,9 @@ button {
     box-shadow: 3;
 }
 
-#gif {
-    position: relative;
-    left: 30vw;
-    height: 30vw;
-    width: 40vw;
-    margin-top: 150px;
-    margin-bottom: 150px;
-    background-color: grey;
-    justify-content: center;
+#gif img{
+    width: 60vw;
+    margin: 150px auto 150px 20vw ;
 }
 
 footer {
@@ -310,15 +304,7 @@ footer {
         padding-top: 100px;
         height: 50vw;
         margin-top: 100px;
-        margin-bottom: 100px;
-    }
-    #gif {
-        padding-top: 100px;
-        height: 70vw;
-        width: 80vw;
-        left: 10vw;
-        margin-top: 100px;
-        margin-bottom: 100px;
+        margin-bottom: 50px;
     }
 }
 
@@ -341,14 +327,7 @@ footer {
         margin-top: 50px;
         margin-bottom: 50px;
     }
-    #gif{
-        padding-top: 10px;
-        height: 75vw;
-        width: 70vw;
-        left: 15vw;
-        margin-top: 100px;
-        margin-bottom: 100px;
-    }
+
 
     .behandlade img {
         width: 60vw;
@@ -384,5 +363,9 @@ footer {
     #about>div {
         row-gap: 30px;
         grid-template-columns: auto;
+    }
+    #gif img{
+        width: 80vw;
+        margin: 100px auto 100px 10vw ;
     }
 }
