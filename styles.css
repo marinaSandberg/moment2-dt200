@@ -176,7 +176,7 @@ nav li:hover {
 }
 
 #products, #about {
-    margin: 3vw 10vw 12vw 10vw;
+    padding: 3vw 5vw 12vw 5vw;
     text-align: center;
 }
 
