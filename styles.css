@@ -64,8 +64,8 @@ header {
     margin-left: 40px;
 }
 
-ul li ::marker{
-    display: none;
+ul {
+    list-style-type: none;
 }
 /*-MENU-*/
 nav {
