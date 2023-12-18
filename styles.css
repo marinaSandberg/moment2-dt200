@@ -18,7 +18,7 @@ body {
     
 }
 
-h1, button {
+h1, .vit-text {
     font-size: 42px;
     font-weight: bold;
     color:  var(--pink);
