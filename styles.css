@@ -9,42 +9,50 @@
 }
 
 body {
-    background-color: #F7F7EE;
+    background-color: #F2F5EA;
     margin: 0;
     overflow-x: hidden;
+    --pink:#E75A7C;
+    --dark:#2C463F;
+    --green:#BBC7A4;
+    
 }
 
 h1 {
     font-size: 42px;
     font-weight: bold;
-    color:  #1E421D;
+    color:  var(--pink);
 }
 h2 {
     font-size: 36px;
     font-weight: bold;
-    color: #1E421D;
+    color: var(--pink);
 }
 h3 {
     font-size: 32px;
     font-weight: bold;
+    color: var(--dark);
 }
 h4 {
     font-size: 26px;
     font-weight: bold;
+    color: var(--dark);
 }
 h5 {
     font-size: 23px;
     font-weight: bold;
+    color: var(--dark);
 }
 h6 {
     font-size: 20px;
     font-weight: bold;
+    color: var(--dark);
 }
 
 header {
     position: fixed;
     width: 100vw;
-    background-color:   #1E421D;
+    background-color:var(--green);
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: 60% 40%;
@@ -58,7 +66,7 @@ header {
 /*-MENU-*/
 nav {
     display: none;
-    background-color: #1E421D;
+    background-color: var(--green);
     box-shadow: 0 0px 10px rgba(0, 0, 0, 0.71);
     font-size: 1.4em;
     position: absolute;
@@ -86,7 +94,7 @@ nav li {
 }
 
 nav a {
-    color: #E1E587;
+    color: black;
     text-decoration: none;
     padding: 0 1em;
 }
@@ -101,7 +109,7 @@ nav li:hover {
     display: flex;
     align-items: center;
     padding: 8px 15px;
-    border: #E1E587 solid 1.5px;
+    border: var(--dark) solid 1.5px;
     cursor: pointer;
 }
 
@@ -110,7 +118,7 @@ nav li:hover {
 }
 
 .menu-btn:hover {
-    box-shadow: 0 0px 5px  #E1E587;;
+    box-shadow: 0 0px 5px  var(--dark);;
 }
 
 .menu-icon {
@@ -122,13 +130,13 @@ nav li:hover {
     display: block;
     width: 20px;
     height: 3px;
-    background-color: #E1E587;
+    background-color: black;
     margin: 5px 0;
 }
 
 .menu-text {
     font-size: 1.2em;
-    color: #E1E587;
+    color: black;
 }
 
 /* Meny knapp, stäng */
@@ -162,7 +170,7 @@ nav li:hover {
 
 #regular a {
     text-decoration: none;
-    color:#E1E587;
+    color:black;
 }
 #banner {
     overflow: hidden;
@@ -183,6 +191,8 @@ nav li:hover {
 
 #products {
     width: 60vw;
+    place-items: center;
+    text-align: center;
 }
 
 #products div {
@@ -273,7 +283,7 @@ button {
     background-color: transparent;
     margin-top: 20px;
     padding: 6px 70px;
-    box-shadow: 3;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.71);
 }
 
 #gif img{
@@ -283,7 +293,7 @@ button {
 
 footer {
     width: 100vw;
-    background-color: #E1E587;
+    background-color: var(--green);
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -292,17 +302,7 @@ footer {
 
 /*-RESPONSIVENESS-*/
 
-@media only screen and (max-width: 1521px) {
-    #regular {
-        display: none;
-    }
-    #open-menu {
-        display:flex;
-    }
-    #products {
-        margin: 12vw 5vw 12vw 5vw;
-        text-align: center;
-    }
+@media only screen and (min-width: 1501px) {
     #products div {
         margin-top: 12vw;
     }
@@ -334,7 +334,6 @@ footer {
         margin-bottom: 50px;
     }
 
-
     .behandlade img {
         width: 60vw;
     }
@@ -358,13 +357,23 @@ footer {
     }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1500px) {
+    #regular {
+        display: none;
+    }
+    #open-menu {
+        display:flex;
+    }
     #products div {
         display: grid;
         grid-template-rows: auto auto auto;
         grid-template-columns: auto;
         row-gap: 20px;
         place-items: center;
+    }
+
+    #program{
+        height: 70vw;
     }
     #about>div {
         row-gap: 30px;
